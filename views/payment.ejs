@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Payment</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .payment-drop {
+        width: 500px;
+      }
+
+      @media screen and (width<768px) {
+        .payment-drop {
+          width: 340px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="drop_in_container" class="payment-drop">Loading...</div>
+  </body>
+  <script src="https://sdk.cashfree.com/js/ui/1.0.26/dropinClient.prod.js"></script>
+  <script src="/js/payment.js"></script>
+</html>

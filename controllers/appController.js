@@ -5,3 +5,7 @@ exports.getIndex = (req, res, next) => {
 exports.getForm = (req, res, next) => {
   res.render("form");
 };
+
+exports.getPayment = (req, res, next) => {
+  res.render("payment");
+};

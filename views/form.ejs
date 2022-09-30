@@ -26,18 +26,19 @@
         </div>
         <div class="form_right">
           <h2>Registration Form</h2>
-          <form action="/home">
-            <input type="text" name="name" placeholder="Name" />
-            <input type="email" name="email" placeholder="Email" />
+          <form id="registration-form">
+            <input id="personName" type="text" name="name" placeholder="Name" />
+            <input id="email" type="email" name="email" placeholder="Email" />
             <input
+              id="age"
               type="number"
               name="age"
               placeholder="Age"
               min="1"
               max="150"
             />
-            <input type="text" name="State" placeholder="State" />
-            <select name="slected">
+            <input id="state" type="text" name="state" placeholder="State" />
+            <select id="fundraising-history" name="fundraising-history">
               <option class="grey" selected disabled>
                 Fundraising History
               </option>
@@ -46,13 +47,16 @@
             </select>
 
             <textarea
-              name="desc"
+              id="business-idea"
+              name="business-idea"
               placeholder="Share your business idea briefly..."
             ></textarea>
-            <button type="submit">Pay</button>
+            <button type="submit" id="pay-btn">Pay</button>
           </form>
         </div>
       </div>
     </section>
   </body>
+  <script src="/js/form.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </html>
