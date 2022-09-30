@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
+body {
+  background-color: #222244;
+  margin: 0;
+}
+
+.main {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Baskerville", serif;
+  margin-top: 2rem;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/bg-img.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: 2rem;
+  width: 60%;
+}
+
+.signup-btn {
+  border: 1px solid transparent;
+  color: #222244;
+  background-color: #cdad7e;
+  font-weight: 900;
+  padding: 1rem 3rem;
+  margin: 3rem 1rem;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  border: 1px solid #222244;
+}
+
+.get-funded-btn {
+  border: 1px solid transparent;
+  color: #222244;
+  background-color: #cdad7e;
+  font-weight: 900;
+  padding: 1rem 3rem;
+  margin: 3rem 1rem;
+  cursor: pointer;
+}
+
+.get-funded-btn:hover {
+  border: 1px solid #222244;
+}
+
+.about-section {
+  margin: 4rem 2rem;
+}
+
+.footer {
+  margin: 2rem 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email-img {
+  cursor: pointer;
+  width: 50px;
+}
+
+.social-icons > a {
+  text-decoration: none;
+}
+
+.icons {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  -webkit-user-drag: none;
+}
+
+.icons:hover {
+  opacity: 0.8;
+}
+
+.registration-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+label {
+  text-align: left;
+  color: #535353;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #222244;
+  font-size: 18px;
+}
+
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #222244;
+}
+
+.next-btn {
+  width: 200px;
+  border: 1px solid transparent;
+  color: #222244;
+  background-color: #cdad7e;
+  font-weight: 900;
+  padding: 1rem 3rem;
+  margin: 3rem auto;
+  cursor: pointer;
+}
+
+.next-btn:hover {
+  border: 1px solid #222244;
+}
+
+/* Modal Styles */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  color: #000;
+  margin: 15% auto;
+  padding: 20px 3rem;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
