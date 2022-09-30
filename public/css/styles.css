@@ -11,6 +11,16 @@ body {
   color: #fff;
 }
 
+.bg-img {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/bg-img.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.2;
+}
+
 .headings {
   display: flex;
   flex-direction: column;
@@ -25,10 +35,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/bg-img.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
   text-align: center;
+}
+
+.top-section__content-wrap {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .subtitle {
@@ -50,29 +65,40 @@ body {
   border: 1px solid #222244;
 }
 
-.get-funded-btn {
-  border: 1px solid transparent;
-  color: #222244;
-  background-color: #cdad7e;
-  font-weight: 900;
-  padding: 1rem 3rem;
-  margin: 3rem 1rem;
-  cursor: pointer;
-}
-
-.get-funded-btn:hover {
-  border: 1px solid #222244;
-}
-
 .about-section {
   margin: 4rem 2rem;
 }
 
+.feature-card__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  width: 300px;
+  padding: 1rem 1.5rem;
+  margin: 2rem;
+  border-radius: 10px;
+  background-color: #cdad7e;
+  color: #222244;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 8px #fff;
+}
+
 .footer {
-  margin: 2rem 4rem;
+  padding: 1rem 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  background-color: #000c12;
 }
 
 .footer-options {
@@ -100,7 +126,7 @@ body {
   opacity: 0.8;
 }
 
-.registration-form {
+/* .registration-form {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -137,8 +163,6 @@ textarea {
   border: 1px solid #222244;
 }
 
-/* Modal Styles */
-
 .modal {
   display: none;
   position: fixed;
@@ -173,4 +197,26 @@ textarea {
   color: red;
   text-decoration: none;
   cursor: pointer;
+} */
+
+@media screen and (width<768px) {
+  .bg-img {
+    background-image: url("../img/bg-img__short.png");
+  }
+  .footer {
+    justify-content: center;
+  }
+  .footer-options {
+    margin: 1rem 0.5rem;
+  }
+  .icons {
+    margin: 0;
+  }
+}
+
+@media screen and (width<520px) {
+  .feature-card {
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+  }
 }

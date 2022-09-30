@@ -11,91 +11,96 @@
   <body>
     <main class="main">
       <div class="top-section">
-        <div class="headings">
-          <div style="font-size: 2rem; font-weight: bold">REVERR</div>
-          <div style="font-size: 1.2rem; font-weight: bold">PRESENTS</div>
-          <br />
-          <div style="font-size: 4rem">STARTUP SHOWER</div>
-        </div>
-        <div class="subtitle">
-          You have the drive; we have the know-how. Be the top ideapreneur and
-          build a business from scratch while we take care of your funds.
-          Register to get an exclusive opportunity to pitch on stage in front of
-          an expert audience.
-        </div>
-        <div>
-          <button id="signup-btn" class="signup-btn">SIGN UP</button>
-          <button class="get-funded-btn">GET FUNDED</button>
-        </div>
-        <div id="signup" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <h1>Registration Form</h1>
-            <p style="text-align: justify">
-              Curious about what to look forward to? Fret not because we have
-              got it all covered for you. Once an ideapreneur registers their
-              business idea, they will be sufficiently guided on how to shape
-              and enhance their business plan. Each registration will access a
-              3-day mentorship session where they will be assisted through the
-              process of starting up and curating a working business plan. Learn
-              from the best before you compete with hundreds of other business
-              ideas and secure your chances of winning the ultimate cash prize
-              worth INR XXX.
-              <br />
-              <br />
-              Feel free to reach out to us; we would love to cater to your
-              curiosity.
-              <br />
-              <br />
-              <strong>Email: </strong>reverrfinaura@gmail.com
-            </p>
+        <div class="bg-img"></div>
+        <div class="top-section__content-wrap">
+          <div class="headings">
+            <div style="font-size: 2rem; font-weight: bold">REVERR</div>
+            <div style="font-size: 1.2rem; font-weight: bold">PRESENTS</div>
             <br />
-            <br />
-            <form class="registration-form" id="registration-form">
-              <label for="personName">Name: </label>
-              <input
-                id="personName"
-                type="text"
-                placeholder="John"
-                onchange="(e) => {
+            <div style="font-size: 3.2rem">STARTUP SHOWER</div>
+          </div>
+          <div class="subtitle">
+            You have the drive; we have the know-how. Be the top ideapreneur and
+            build a business from scratch while we take care of your funds.
+            Register to get an exclusive opportunity to pitch on stage in front
+            of an expert audience.
+          </div>
+          <div>
+            <button id="signup-btn" class="signup-btn">SIGN UP</button>
+          </div>
+          <!--<div id="signup" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h1>Registration Form</h1>
+              <p style="text-align: justify">
+                Curious about what to look forward to? Fret not because we have
+                got it all covered for you. Once an ideapreneur registers their
+                business idea, they will be sufficiently guided on how to shape
+                and enhance their business plan. Each registration will access a
+                3-day mentorship session where they will be assisted through the
+                process of starting up and curating a working business plan.
+                Learn from the best before you compete with hundreds of other
+                business ideas and secure your chances of winning the ultimate
+                cash prize worth INR XXX.
+                <br />
+                <br />
+                Feel free to reach out to us; we would love to cater to your
+                curiosity.
+                <br />
+                <br />
+                <strong>Email: </strong>reverrfinaura@gmail.com
+              </p>
+              <br />
+              <br />
+              <form class="registration-form" id="registration-form">
+                <label for="personName">Name: </label>
+                <input
+                  id="personName"
+                  type="text"
+                  placeholder="John"
+                  onchange="(e) => {
                   console.log(e.target.value);
                 }"
-              />
-              <br />
-              <label for="email">Email: </label>
-              <input id="email" type="email" placeholder="john@reverr.com" />
-              <br />
-              <label for="contact">Contact: </label>
-              <input id="contact" type="text" placeholder="+91 1234567890" />
-              <br />
-              <label for="age">Age: </label>
-              <input
-                id="age"
-                type="number"
-                placeholder="22"
-                min="1"
-                max="150"
-              />
-              <br />
-              <label for="state">State: </label>
-              <input id="state" type="text" placeholder="Enter your state..." />
-              <br />
-              <label for="fundraising-history">Fundraising History: </label>
-              <input id="fundraising-history" type="text" />
-              <br />
-              <label for="business-idea"
-                >Share your business idea briefly:
-              </label>
-              <textarea
-                id="business-idea"
-                style="resize: vertical"
-                rows="5"
-                placeholder="Write you business idea here..."
-              ></textarea>
-              <button type="submit" class="next-btn">Next</button>
-            </form>
-          </div>
+                />
+                <br />
+                <label for="email">Email: </label>
+                <input id="email" type="email" placeholder="john@reverr.com" />
+                <br />
+                <label for="contact">Contact: </label>
+                <input id="contact" type="text" placeholder="+91 1234567890" />
+                <br />
+                <label for="age">Age: </label>
+                <input
+                  id="age"
+                  type="number"
+                  placeholder="22"
+                  min="1"
+                  max="150"
+                />
+                <br />
+                <label for="state">State: </label>
+                <input
+                  id="state"
+                  type="text"
+                  placeholder="Enter your state..."
+                />
+                <br />
+                <label for="fundraising-history">Fundraising History: </label>
+                <input id="fundraising-history" type="text" />
+                <br />
+                <label for="business-idea"
+                  >Share your business idea briefly:
+                </label>
+                <textarea
+                  id="business-idea"
+                  style="resize: vertical"
+                  rows="5"
+                  placeholder="Write you business idea here..."
+                ></textarea>
+                <button type="submit" class="next-btn">Next</button>
+              </form>
+            </div>
+          </div> -->
         </div>
       </div>
       <div class="about-section">
@@ -117,28 +122,38 @@
           So, buckle up and get ready to race your mental faculties in this
           contest that will lead your idea to a fundraising opportunity.
         </p>
-        <h3>Feature #1 Align Your Business Ideas With Goals</h3>
-        <p>
-          It's easy to have an idea, but it's not always so easy to know how to
-          turn that idea into a tangible business plan. We have the process and
-          resources in place to help you make your ideas take shape. With an
-          actionable plan that aligns with your goals, the sky is the limit.
-          Your new life as a young entrepreneur starts here.
-        </p>
-        <h3>Feature #2 Get The Funds You Need</h3>
-        <p>
-          Turn your idea into a fundraising opportunity. At the Startup Shower,
-          you’ll get the opportunity to grow your idea into a business—all while
-          getting exposure and connectivity to the industry best. Let us help
-          you turn your ideas into reality and find the right investors for you.
-        </p>
-        <h3>Feature #3 Get An Expert Opinion On Your Idea</h3>
-        <p>
-          Startup Shower is a one-of-a-kind event that celebrates the spirit of
-          entrepreneurship. Meet with experts in the field, engage with
-          high-net-worth individuals and investors, and connect with other
-          entrepreneurs at the top of their game.
-        </p>
+        <div class="feature-card__wrap">
+          <div class="feature-card">
+            <h3>Feature #1<br />Align Your Business Ideas With Goals</h3>
+            <p>
+              It's easy to have an idea, but it's not always so easy to know how
+              to turn that idea into a tangible business plan. We have the
+              process and resources in place to help you make your ideas take
+              shape. With an actionable plan that aligns with your goals, the
+              sky is the limit. Your new life as a young entrepreneur starts
+              here.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Feature #2<br />Get The Funds You Need</h3>
+            <p>
+              Turn your idea into a fundraising opportunity. At the Startup
+              Shower, you’ll get the opportunity to grow your idea into a
+              business—all while getting exposure and connectivity to the
+              industry best. Let us help you turn your ideas into reality and
+              find the right investors for you.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Feature #3<br />Get An Expert Opinion On Your Idea</h3>
+            <p>
+              Startup Shower is a one-of-a-kind event that celebrates the spirit
+              of entrepreneurship. Meet with experts in the field, engage with
+              high-net-worth individuals and investors, and connect with other
+              entrepreneurs at the top of their game.
+            </p>
+          </div>
+        </div>
       </div>
       <div class="footer">
         <div class="footer-options">
