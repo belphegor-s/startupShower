@@ -30,12 +30,11 @@ body {
   margin-top: 2rem;
 }
 
-.top-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.logo__wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2rem;
 }
 
 .top-section__content-wrap {
@@ -44,6 +43,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .subtitle {
@@ -211,6 +218,16 @@ textarea {
   }
   .icons {
     margin: 0;
+  }
+  .logo__wrap {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .top-section__content-wrap {
+    transform: translateY(1.5rem);
   }
 }
 
