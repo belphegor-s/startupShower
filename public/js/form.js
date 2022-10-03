@@ -7,6 +7,7 @@ registrationForm.onsubmit = (e) => {
 
   var personName = document.getElementById("personName").value;
   var email = document.getElementById("email").value;
+  var contact = document.getElementById("contact").value;
   var age = document.getElementById("age").value;
   var state = document.getElementById("state").value;
   var fundraisingHistory = document.getElementById("fundraising-history").value;
@@ -15,16 +16,12 @@ registrationForm.onsubmit = (e) => {
   const data = {
     name: personName,
     email: email,
+    contact: contact,
     age: age,
     state: state,
     fundraisingHistory: fundraisingHistory,
     businessIdea: businessIdea,
   };
-
-  const customerID = "xyz";
-  const customerPhone = "1234567890";
-  const amt = 500;
-  var orderToken = null;
 
   const idGen = (length) => {
     var id = "";
@@ -34,9 +31,13 @@ registrationForm.onsubmit = (e) => {
     for (var i = 0; i < length; i++) {
       id += possible.charAt(Math.floor(Math.random() * possible.length));
     }
-
     return id;
   };
+
+  const customerID = idGen(12);
+  const customerPhone = contact;
+  const amt = 500;
+  var orderToken = null;
 
   const order = {
     id: idGen(12),
@@ -62,10 +63,12 @@ registrationForm.onsubmit = (e) => {
         sessionStorage.setItem("orderToken", orderToken);
         console.log(orderToken);
         window.location = "/payment";
+        document.getElementById("pay-btn").innerHTML = "Pay";
       })
       .catch((err) => {
         loading = false;
         console.log(err);
+        document.getElementById("pay-btn").innerHTML = "Pay";
       });
   };
 
