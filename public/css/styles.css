@@ -66,10 +66,11 @@ body {
   padding: 1rem 3rem;
   margin: 3rem 1rem;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .signup-btn:hover {
-  border: 1px solid #222244;
+  transform: scale(1.1);
 }
 
 .about-section {
