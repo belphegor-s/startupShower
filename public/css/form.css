@@ -75,7 +75,6 @@ body {
 }
 
 .form_right form input,
-select,
 textarea,
 button {
   all: unset;
@@ -89,7 +88,25 @@ button {
 }
 
 .form_right select {
+  all: unset;
+  color: #fff;
+  width: 70%;
+  padding: 8px;
+  margin-top: 1rem;
+  border: 2px solid #000c12;
+  outline: none;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../img/expand-arrow.png") 98% / 6% no-repeat #eee;
+  background-size: 13px;
+  background-color: #000c12;
   cursor: pointer;
+}
+
+.form_rigth select::-ms-expand {
+  display: none;
 }
 
 .form_right button {
@@ -108,7 +125,7 @@ button {
   border-top: 5px solid #3498db;
   width: 20px;
   height: 20px;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
+  -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
 
